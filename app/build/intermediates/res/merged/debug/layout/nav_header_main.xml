@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@mipmap/ic_launcher"
+        android:id="@+id/circleView"
+        android:layout_gravity="center" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+        <TextView
+            android:id="@+id/user_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorDarkGray"
+            android:text="이름"/>
+
+        <TextView
+            android:id="@+id/user_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorDarkGray"
+            android:text="보유 포인트" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

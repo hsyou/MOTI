@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "C:\\Users\\hs\\AndroidStudioProjects\\pacemaker-master\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_main.xml",
+        "source": "C:\\Users\\hs\\AndroidStudioProjects\\pacemaker-master\\app\\src\\main\\res\\menu\\menu_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\hs\\AndroidStudioProjects\\pacemaker-master\\app\\build\\intermediates\\res\\merged\\debug\\menu\\drawermenu.xml",
+        "source": "C:\\Users\\hs\\AndroidStudioProjects\\pacemaker-master\\app\\src\\main\\res\\menu\\drawermenu.xml"
+    }
+]
