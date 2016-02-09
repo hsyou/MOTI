@@ -38,11 +38,11 @@ public class RegisterFragment extends Fragment {
 //        Button btnSub2 = (Button)rootView.findViewById(R.id.r_study_sub2);
 
         Spinner spinSub1 = (Spinner)rootView.findViewById(R.id.r_study_sub1);
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(getContext(), android.R.layout.simple_list_item_1, sub1List);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(getContext(), R.layout.register_study_sub_item, sub1List);
         spinSub1.setAdapter(adapter);
 
         Spinner spinSub2 = (Spinner)rootView.findViewById(R.id.r_study_sub2);
-        ArrayAdapter<String> adapter2 = new ArrayAdapter<String>(getContext(), android.R.layout.simple_list_item_1, sub2List);
+        ArrayAdapter<String> adapter2 = new ArrayAdapter<String>(getContext(), R.layout.register_study_sub_item, sub2List);
         spinSub2.setAdapter(adapter2);
 
         return rootView;

@@ -1,101 +1,124 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-
-    <ScrollView
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:orientation="vertical">
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="240dp"
-                android:gravity="center"
-                android:background="@color/colorLightGray">
-
-                <ImageView
-                    android:id="@+id/profile_profile_img_back"
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                    android:src="@mipmap/ic_launcher"/>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerInParent="true"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:src="@mipmap/ic_launcher"
-                        android:layout_gravity="center_vertical"/>
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginRight="20dp"
-                        android:orientation="vertical"
-                        android:gravity="center_horizontal">
-
-                        <de.hdodenhof.circleimageview.CircleImageView
-                            xmlns:app="http://schemas.android.com/apk/res-auto"
-                            app:civ_border_width="1dp"
-                            app:civ_border_color="#FFFFFF"
-                            android:id="@+id/profile_profile_img"
-                            android:layout_width="80dp"
-                            android:layout_height="80dp"
-                            android:src="@mipmap/ic_launcher"/>
-
-                        <TextView
-                            android:id="@+id/profile_profile_id"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="4dp"
-                            android:text="ilovekong"
-                            android:textStyle="bold"
-                            android:textSize="@dimen/font_title"
-                            android:textColor="@color/colorDivide"/>
-
-                        <TextView
-                            android:id="@+id/profile_profile_subs"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="4dp"
-                            android:text="영어회화 / TOEIC"
-                            android:textSize="@dimen/font_title"
-                            android:textColor="@color/colorDivide"/>
-
-                    </LinearLayout>
-                    <ImageView
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:src="@mipmap/ic_launcher"
-                        android:layout_gravity="center_vertical"/>
-
-                </LinearLayout>
+    <com.github.florent37.materialviewpager.MaterialViewPager
+        android:id="@+id/materialViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:viewpager_logo="@layout/profile_header_content"
+        app:viewpager_logoMarginTop="20dp"
+        app:viewpager_color="@color/colorPrimary"
+        app:viewpager_headerHeight="200dp"
+        app:viewpager_headerAlpha="1.0"
+        app:viewpager_hideLogoWithFade="true"
+        app:viewpager_hideToolbarAndTitle="true"
+        app:viewpager_enableToolbarElevation="true"
+        app:viewpager_parallaxHeaderFactor="1.5"
+        app:viewpager_headerAdditionalHeight="20dp"
+        app:viewpager_displayToolbarWhenSwipe="true"
+        app:viewpager_transparentToolbar="true"
+        app:viewpager_animatedHeaderImage="true"
+        app:viewpager_disableToolbar="false"
+        app:viewpager_pagerTitleStrip="@layout/material_view_pager_pagertitlestrip_standard"
+        />
 
 
 
-            </RelativeLayout>
+    <!--<ScrollView-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="fill_parent">-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:orientation="vertical">-->
 
-            <FrameLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+            <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="240dp"-->
+                <!--android:gravity="center"-->
+                <!--android:background="@color/colorLightGray">-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/profile_profile_img_back"-->
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_height="fill_parent"-->
+                    <!--android:src="@mipmap/ic_launcher"/>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_centerInParent="true"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="20dp"-->
+                        <!--android:layout_height="20dp"-->
+                        <!--android:src="@mipmap/ic_launcher"-->
+                        <!--android:layout_gravity="center_vertical"/>-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginLeft="20dp"-->
+                        <!--android:layout_marginRight="20dp"-->
+                        <!--android:orientation="vertical"-->
+                        <!--android:gravity="center_horizontal">-->
+
+                        <!--<de.hdodenhof.circleimageview.CircleImageView-->
+                            <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+                            <!--app:civ_border_width="1dp"-->
+                            <!--app:civ_border_color="#FFFFFF"-->
+                            <!--android:id="@+id/profile_profile_img"-->
+                            <!--android:layout_width="80dp"-->
+                            <!--android:layout_height="80dp"-->
+                            <!--android:src="@mipmap/ic_launcher"/>-->
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/profile_profile_id"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginTop="4dp"-->
+                            <!--android:text="ilovekong"-->
+                            <!--android:textStyle="bold"-->
+                            <!--android:textSize="@dimen/font_title"-->
+                            <!--android:textColor="@color/colorDivide"/>-->
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/profile_profile_subs"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginTop="4dp"-->
+                            <!--android:text="영어회화 / TOEIC"-->
+                            <!--android:textSize="@dimen/font_title"-->
+                            <!--android:textColor="@color/colorDivide"/>-->
+
+                    <!--</LinearLayout>-->
+                    <!--<ImageView-->
+                        <!--android:layout_width="20dp"-->
+                        <!--android:layout_height="20dp"-->
+                        <!--android:src="@mipmap/ic_launcher"-->
+                        <!--android:layout_gravity="center_vertical"/>-->
+
+                <!--</LinearLayout>-->
 
 
-            </FrameLayout>
+
+            <!--</RelativeLayout>-->
+
+            <!--<FrameLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content">-->
+
+
+            <!--</FrameLayout>-->
 
 
 
-        </LinearLayout>
-    </ScrollView>
+        <!--</LinearLayout>-->
+    <!--</ScrollView>-->
 
     
 </LinearLayout>
