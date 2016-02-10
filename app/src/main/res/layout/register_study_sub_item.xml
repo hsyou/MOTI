@@ -8,4 +8,5 @@
     android:singleLine="true"
     android:gravity="center"
     android:layout_height="@dimen/one_line"
+    android:text="hi"
     />

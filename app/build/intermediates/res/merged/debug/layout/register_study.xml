@@ -17,6 +17,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:padding="@dimen/divider"
             android:background="@color/colorUnderLine"
             android:columnCount="2"
             android:focusable="true"
@@ -57,24 +58,39 @@
                 <!--android:background="@color/colorDivide"-->
                 <!--android:text="1차 과목"-->
                 <!--android:textColor="@color/colorDarkGray" />-->
-                <Spinner
-                    android:id="@+id/r_study_sub1"
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@color/colorPrimary"
                     android:layout_marginRight="@dimen/divider"
-                    >
-                </Spinner>
+                    android:background="@color/colorDivide"
+                    android:paddingRight="@dimen/divider">
 
-                <Spinner
-                    android:id="@+id/r_study_sub2"
+                    <Spinner
+                        android:id="@+id/r_study_sub1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        >
+                    </Spinner>
+                </LinearLayout>
+
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@color/colorPrimary"
-                    >
-                </Spinner>
+                    android:background="@color/colorDivide"
+                    android:paddingRight="@dimen/divider">
+
+                    <Spinner
+                        android:id="@+id/r_study_sub2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        >
+                    </Spinner>
+
+                </LinearLayout>
+
 
                 <!--<Button-->
                 <!--android:id="@+id/r_study_sub2"-->
@@ -98,16 +114,16 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="5"
-                    android:background="@color/colorPrimary"
+                    android:background="@color/colorDivide"
                     android:gravity="center"
-                    android:paddingLeft="@dimen/left_pad"
                     android:text="요일 선택"
-                    android:textColor="@color/colorDivide" />
+                    android:textColor="@color/colorDarkGray" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="3"
+                    android:paddingLeft="20dp"
                     android:background="@color/colorDivide"
                     android:gravity="center_vertical"
                     android:paddingRight="@dimen/left_pad">
@@ -120,7 +136,7 @@
                         android:gravity="center"
                         android:text="월"
 
-                        android:textColor="@color/colorDarkGray" />
+                        android:textColor="@color/colorLightGray" />
 
                     <TextView
                         android:id="@+id/r_study_tue"
@@ -129,7 +145,7 @@
                         android:layout_weight="1"
                         android:gravity="center"
                         android:text="화"
-                        android:textColor="@color/colorDarkGray" />
+                        android:textColor="@color/colorLightGray" />
 
                     <TextView
                         android:id="@+id/r_study_wed"
@@ -138,7 +154,7 @@
                         android:layout_weight="1"
                         android:gravity="center"
                         android:text="수"
-                        android:textColor="@color/colorDarkGray" />
+                        android:textColor="@color/colorLightGray" />
 
                     <TextView
                         android:id="@+id/r_study_thu"
@@ -147,7 +163,7 @@
                         android:layout_weight="1"
                         android:gravity="center"
                         android:text="목"
-                        android:textColor="@color/colorDarkGray" />
+                        android:textColor="@color/colorLightGray" />
 
                     <TextView
                         android:id="@+id/r_study_fri"
@@ -156,7 +172,7 @@
                         android:layout_weight="1"
                         android:gravity="center"
                         android:text="금"
-                        android:textColor="@color/colorDarkGray" />
+                        android:textColor="@color/colorLightGray" />
 
                     <TextView
                         android:id="@+id/r_study_sat"
@@ -165,7 +181,7 @@
                         android:layout_weight="1"
                         android:gravity="center"
                         android:text="토"
-                        android:textColor="@color/colorDarkGray" />
+                        android:textColor="@color/colorLightGray" />
 
                     <TextView
                         android:id="@+id/r_study_sun"
@@ -174,7 +190,7 @@
                         android:layout_weight="1"
                         android:gravity="center"
                         android:text="일"
-                        android:textColor="@color/colorDarkGray" />
+                        android:textColor="@color/colorLightGray" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -188,27 +204,37 @@
                 android:background="@color/colorDivide"
                 android:orientation="horizontal">
 
-                <Button
-                    android:id="@+id/r_study_regionBtn"
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/one_line"
-                    android:layout_column="0"
-                    android:layout_rowSpan="1"
-                    android:layout_weight="5"
-                    android:background="@color/colorPrimary"
-                    android:paddingLeft="@dimen/left_pad"
-                    android:text="지역"
-                    android:textColor="@color/colorDivide" />
-
-
-                <TextView
+                <Spinner
                     android:id="@+id/r_study_region"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="3"
-                    android:gravity="center"
-                    android:text="미정"
-                    android:textColor="@color/colorDarkGray" />
+                    android:layout_weight="1"
+                    android:background="@color/colorDivide" />
+
+                <!--<Button-->
+                    <!--android:id="@+id/r_study_regionBtn"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="@dimen/one_line"-->
+                    <!--android:layout_column="0"-->
+                    <!--android:layout_rowSpan="1"-->
+                    <!--android:layout_weight="5"-->
+                    <!--android:background="@color/colorPrimary"-->
+                    <!--android:paddingLeft="@dimen/left_pad"-->
+                    <!--android:text="지역"-->
+                    <!--android:textColor="@color/colorDivide" />-->
+
+
+                <!--<TextView-->
+                    <!--android:id="@+id/r_study_region"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_weight="3"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="미정"-->
+                    <!--android:textColor="@color/colorDarkGray" />-->
+
+
+
                 <!--<EditText-->
                 <!--android:id="@+id/r_study_region_detail"-->
                 <!--android:layout_width="match_parent"-->
@@ -310,6 +336,7 @@
                 android:id="@+id/r_study_register"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/divider"
                 android:background="@color/colorPrimary"
                 android:text="스터디 등록"
                 android:layout_alignParentBottom="true"
