@@ -4,12 +4,20 @@
         "source": "C:\\Users\\hs\\AndroidStudioProjects\\pacemaker-master\\app\\src\\main\\res\\menu\\menu_main.xml"
     },
     {
+        "merged": "C:\\Users\\hs\\Desktop\\motia\\moti\\app\\build\\intermediates\\res\\merged\\debug\\menu\\drawermenu.xml",
+        "source": "C:\\Users\\hs\\Desktop\\motia\\moti\\app\\src\\main\\res\\menu\\drawermenu.xml"
+    },
+    {
         "merged": "C:\\Users\\Kayla\\Desktop\\Projects\\Android\\Pacemaker\\MOTI\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_main.xml",
         "source": "C:\\Users\\Kayla\\Desktop\\Projects\\Android\\Pacemaker\\MOTI\\app\\src\\main\\res\\menu\\menu_main.xml"
     },
     {
         "merged": "C:\\Users\\Kayla\\Desktop\\Projects\\Android\\Pacemaker\\MOTI\\app\\build\\intermediates\\res\\merged\\debug\\menu\\drawermenu.xml",
         "source": "C:\\Users\\Kayla\\Desktop\\Projects\\Android\\Pacemaker\\MOTI\\app\\src\\main\\res\\menu\\drawermenu.xml"
+    },
+    {
+        "merged": "C:\\Users\\hs\\Desktop\\motia\\moti\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_main.xml",
+        "source": "C:\\Users\\hs\\Desktop\\motia\\moti\\app\\src\\main\\res\\menu\\menu_main.xml"
     },
     {
         "merged": "C:\\Users\\hs\\AndroidStudioProjects\\pacemaker-master\\app\\build\\intermediates\\res\\merged\\debug\\menu\\drawermenu.xml",

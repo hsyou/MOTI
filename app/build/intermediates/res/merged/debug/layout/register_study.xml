@@ -62,7 +62,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:layout_marginRight="@dimen/divider"
+                    android:layout_marginRight="@dimen/divider_half"
                     android:background="@color/colorDivide"
                     android:paddingRight="@dimen/divider">
 
@@ -79,6 +79,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/divider_half"
                     android:background="@color/colorDivide"
                     android:paddingRight="@dimen/divider">
 

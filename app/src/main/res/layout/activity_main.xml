@@ -47,8 +47,43 @@
             android:layout_gravity="start"
             android:id="@+id/navi_view"
             app:theme="@style/NavigationDrawerStyle"
-            app:itemTextColor="@android:color/black"
+            app:itemTextColor="@color/colorText"
             app:headerLayout="@layout/nav_header_main"
             app:menu="@menu/drawermenu">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical|right"
+            android:layout_gravity="bottom">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingRight="15dp"
+                android:id="@+id/help_btn"
+                android:text="도움말"
+                android:textColor="@color/colorText"
+                android:clickable="true"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/setup_btn"
+                android:paddingRight="15dp"
+                android:text="설정"
+                android:textColor="@color/colorText"
+                android:clickable="true"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/logout_btn"
+                android:text="로그아웃"
+                android:paddingRight="15dp"
+                android:textColor="@color/colorText"
+                android:clickable="true"
+                />
+
+        </LinearLayout>
     </android.support.design.widget.NavigationView>
 </android.support.v4.widget.DrawerLayout>

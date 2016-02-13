@@ -37,17 +37,6 @@
             android:id="@+id/nav_blog"/>
 
     </group>
-    <group android:id="@+id/menu_button" android:checkableBehavior="single">
-        <item android:title="도움말"
-            android:id="@+id/nav_help"/>
-
-        <item android:title="설정"
-            android:id="@+id/nav_setup"/>
-
-        <item android:title="로그아웃"
-            android:id="@+id/nav_logout"/>
-    </group>
-
 
 
 

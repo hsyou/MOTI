@@ -4,6 +4,10 @@
         "source": "C:\\Users\\Kayla\\Desktop\\Projects\\Android\\Pacemaker\\MOTI\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
     },
     {
+        "merged": "C:\\Users\\hs\\Desktop\\motia\\moti\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi-v4\\ic_launcher.png",
+        "source": "C:\\Users\\hs\\Desktop\\motia\\moti\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
         "merged": "C:\\Users\\hs\\AndroidStudioProjects\\pacemaker-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi-v4\\ic_launcher.png",
         "source": "C:\\Users\\hs\\AndroidStudioProjects\\pacemaker-master\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
     }
